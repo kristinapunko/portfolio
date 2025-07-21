@@ -46,32 +46,37 @@ const ExperienceCard = ({experience}) =>{
       <img
         src={experience.icon}
         alt={experience.skills}
-        className="w-[60%] h-[60%] object-contain"
+        className=" w-[40%] h-[40%] lg:w-[60%] lg:h-[60%] object-contain"
       />
     </div>
   }
 >
-  <h3 className="text-[24px] font-bold">{experience.title}</h3>
+  <h3 className="text-[18px] lg:text-[24px] font-bold">{experience.title}</h3>
 
-  <ul className="mt-5 list-disc ml-5 space-y-2">
-    {experience.points.map((point, index) => (
-      <li key={`point-${index}`} className="text-[14px] pl-1 tracking-wider">
-        {point}
-      </li>
-    ))}
-  </ul>
+  <ul className="mt-5 list-none lg:list-disc lg:ml-5 space-y-2">
+  {experience.points.map((point, index) => (
+    <li key={`point-${index}`} className="text-[10px] lg:text-[14px] lg:pl-1 tracking-wider">
+      {point}
+    </li>
+  ))}
+</ul>
+
 </VerticalTimelineElement>
 
 )}
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.heroSubText}>What I have done so far</p>
+      <motion.div
+        variants={textVariant()}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+      >          <p className={styles.heroSubText}>What I have done so far</p>
         <h2 className={styles.sectionHeadText}>Knowelage.</h2>
       </motion.div>
 
-      <div className="mt-20 flex flex-col">
+      <div className="mt-10 lg:mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index)=>(
             <ExperienceCard key={index} experience={experience}/>

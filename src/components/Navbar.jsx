@@ -390,7 +390,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <div
         className={`${
           toggle ? 'flex' : 'hidden'
-        } p-6 bg-gray-800 dark:bg-gray-900 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl shadow-lg transition-all duration-300`}
+        } p-6 bg-gray-500 dark:bg-gray-900 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl shadow-lg transition-all duration-300`}
       >
         <ul className="list-none flex flex-col justify-end items-start gap-4">
           {navLinks.map((link) => (
@@ -412,7 +412,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         </ul>
 
         {/* Dark Mode Toggle Button */}
-        <div className="flex justify-center items-center mt-6 dark:bg-[#0D0000] rounded-full">
+        <div className="flex justify-center items-center dark:bg-gray-900 rounded-full">
           <button
             onClick={toggleDarkMode}
             className="h-12 w-12 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"

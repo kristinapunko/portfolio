@@ -60,7 +60,7 @@ const ServiceCard = ({ index, title, icon }) => {
             scale: 1,
             speed: 450
           }}
-          className='bg-transparent rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col 
+          className='bg-transparent rounded-[20px] py-5 px-12 min-h-[170px] flex justify-evenly items-center flex-col 
                      backdrop-blur-md border border-transparent bg-clip-padding'
         >
           <img src={icon} alt={title} className='w-16 h-16 object-contain' />
@@ -81,7 +81,7 @@ const About = () => {
   
     <motion.p
       variants={fadeIn("", "", 0.1, 1)}
-      className='mt-4 text-[#736048] dark:text-[#BFBC8A] text-[17px] max-w-5xl leading-[30px]'
+      className='mt-4 text-[#736048] dark:text-[#BFBC8A] text-[14px] lg:text-[17px] max-w-5xl leading-[25px] md:leading-[30px]'
     >
       Knowledge of HTML5, CSS3, JavaScript, and TypeScript. Experience with React, React Native, and Next.js, including creating components, using Hooks, managing state through the Redux Toolkit, setting up routing with React Router, and integrating various libraries. Work with REST APIs and MongoDB and PostgreSQL databases. Development of responsive layout using CSS, SCSS, Bootstrap, Styled Components, MUI and TailwindCSS. Confident use of version control systems Git, Bitbucket, GitLab. Creating designs in Figma.
     </motion.p>

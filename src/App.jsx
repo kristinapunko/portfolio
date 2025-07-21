@@ -97,14 +97,14 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+
         <div className="relative z-0 bg-[#E4EAF2] dark:bg-[#0D0000]">
           <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
             <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
             <Hero />
           </div>
           <div className="min-h-screen flex items-center justify-center">
-            <div className="w-[80%]">
+            <div className="w-[100%] lg:w-[80%]">
               <About />
               <Experience />
               <Tech />
@@ -118,7 +118,7 @@ function App() {
             <StarsCanvas darkMode={darkMode} />
           </div>
       </div>
-    </BrowserRouter>
+
   );
 }
 
