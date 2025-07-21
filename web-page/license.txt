@@ -1,0 +1,11 @@
+Model Information:
+* title:	WEB PAGE
+* source:	https://sketchfab.com/3d-models/web-page-b6b439c30188419d8cc566b107671ee9
+* author:	vickpaz (https://sketchfab.com/vickpaz)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "WEB PAGE" (https://sketchfab.com/3d-models/web-page-b6b439c30188419d8cc566b107671ee9) by vickpaz (https://sketchfab.com/vickpaz) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
